@@ -1,0 +1,34 @@
+{
+  "updated_local": "2026-09-10T03:10:00-04:00",
+  "goal_status": "complete; frozen search-free RL value ensemble certified 100/100",
+  "final_model": {
+    "manifest": "models/rl/final_value_policy.json",
+    "architecture": "three reinforcement-learned sparse n-tuple afterstate value networks, weighted 1:1:2",
+    "search": false,
+    "inference": "one deterministic result per legal move; no recursion, random-spawn enumeration, or chance nodes",
+    "certification": "results/rl/final_rl_value_ensemble_700000.json",
+    "seeds": "700000-700099",
+    "wins": 100,
+    "games": 100,
+    "broad_evaluation_wins": 9869,
+    "broad_evaluation_games": 10000
+  },
+  "realistic_environment": {
+    "initial_tiles": 2,
+    "spawn_2_probability": 0.9,
+    "spawn_4_probability": 0.1
+  },
+  "dense_current_board_comparison": {
+    "manifest": "models/rl/best_policy.json",
+    "wins": 79,
+    "games": 100,
+    "result": "results/rl/fusion_policy_base_line_committee_development.json"
+  },
+  "animations": {
+    "random": "animations/random_agent.gif",
+    "initial_neural": "animations/rl_initial_neural.gif",
+    "final": "animations/final_rl_bot.gif",
+    "final_trace": "animations/final_rl_bot.json"
+  },
+  "active_runs": []
+}

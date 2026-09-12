@@ -1,0 +1,29 @@
+{
+  "final_manifest_hashes_verified": true,
+  "search_disabled": true,
+  "certification_100_of_100": true,
+  "initial_neural_checkpoint_loads": true,
+  "recordings": [
+    {
+      "recording": "random_agent",
+      "moves_replayed": 75,
+      "gif_frames": 77,
+      "duration_s": 9.04,
+      "won": false
+    },
+    {
+      "recording": "rl_initial_neural",
+      "moves_replayed": 106,
+      "gif_frames": 108,
+      "duration_s": 11.83,
+      "won": false
+    },
+    {
+      "recording": "final_rl_bot",
+      "moves_replayed": 1176,
+      "gif_frames": 151,
+      "duration_s": 15.7,
+      "won": true
+    }
+  ]
+}

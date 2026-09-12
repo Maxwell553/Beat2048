@@ -1,0 +1,35 @@
+{
+  "config": {
+    "checkpoints": [
+      "models/rl/value_teacher_500k.ptbin",
+      "models/rl/value_teacher_510k.ptbin",
+      "models/rl/value_teacher_continued_100k.ptbin"
+    ],
+    "weights": [
+      1.0,
+      1.0,
+      2.0
+    ],
+    "wide_checkpoints": [],
+    "wide_weights": null,
+    "games": 10000,
+    "seed": 111100000,
+    "output": "results/rl/teacher_ensemble_base_1111.json"
+  },
+  "checkpoint_sha256": {
+    "models/rl/value_teacher_500k.ptbin": "6796cf7c5b2f8cd510ec45335184e7956c2458daa3bc2d35e0170dcc8b8ddf70",
+    "models/rl/value_teacher_510k.ptbin": "2fa3c09cc76c74dea97256d710d5c7daf6d63b1f067519845322618fd3314d23",
+    "models/rl/value_teacher_continued_100k.ptbin": "b5f8c66c857870141ab94d056319548e624d8b67bcb1c73e330b3e8f5ff2e99e"
+  },
+  "role": "training-only learned afterstate teacher; not the deployed policy",
+  "search": false,
+  "summary": {
+    "games": 10000,
+    "wins": 9869,
+    "wilson_95": [
+      0.9844770888796288,
+      0.9889489735070063
+    ],
+    "mean_moves": 1170.6397
+  }
+}

@@ -1,0 +1,45 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# Generated native binaries
+native/*
+!native/*.cpp
+!native/*.h
+
+# Training corpora and experimental checkpoints are reproducible scratch data.
+data/
+models/*
+!models/rl/
+models/rl/*
+!models/rl/final_value_policy.json
+!models/rl/value_teacher_500k.ptbin.gz
+!models/rl/value_teacher_510k.ptbin.gz
+!models/rl/value_teacher_continued_100k.ptbin.gz
+!models/rl/conv_initial.pt
+
+# Preserve only release evaluations and recordings.
+results/*
+!results/artifact_checks.json
+!results/rl/
+results/rl/*
+!results/rl/final_rl_value_ensemble_700000.json
+!results/rl/teacher_ensemble_base_1111.json
+!results/rl/run_state.json
+
+animations/*
+!animations/random_agent.gif
+!animations/random_agent.json
+!animations/random_agent_final.png
+!animations/rl_initial_neural.gif
+!animations/rl_initial_neural.json
+!animations/rl_initial_neural_final.png
+!animations/final_rl_bot.gif
+!animations/final_rl_bot.json
+!animations/final_rl_bot_final.png
+
+reel_01/incoming/
+reel_01/work/
+*.zip
+.12

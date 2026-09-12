@@ -1,0 +1,5 @@
+# Direct dependency versions used for the saved run (Python 3.9.6, macOS arm64).
+numpy==2.0.2
+torch==2.8.0
+Pillow==11.3.0
+matplotlib==3.9.4

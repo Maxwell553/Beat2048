@@ -1,0 +1,32 @@
+{
+  "kind": "sparse_afterstate_value_ensemble",
+  "trained_with": "on-policy TD(lambda) from merge rewards, with no expectimax labels",
+  "search": false,
+  "inference": "score the four deterministic legal move results once; no recursion, spawn enumeration, or chance nodes",
+  "models": [
+    {
+      "path": "models/rl/value_teacher_500k.ptbin.gz",
+      "weight": 1.0,
+      "sha256": "4aed4a08a422c7c239a11fc7f4711c211e239ffd0a219af33a72d80f08a62ef8",
+      "uncompressed_sha256": "6796cf7c5b2f8cd510ec45335184e7956c2458daa3bc2d35e0170dcc8b8ddf70"
+    },
+    {
+      "path": "models/rl/value_teacher_510k.ptbin.gz",
+      "weight": 1.0,
+      "sha256": "24fe4fcebbceb01b9f5c64d816920167e3f74f8968beae59eb1a6a4936dccf4b",
+      "uncompressed_sha256": "2fa3c09cc76c74dea97256d710d5c7daf6d63b1f067519845322618fd3314d23"
+    },
+    {
+      "path": "models/rl/value_teacher_continued_100k.ptbin.gz",
+      "weight": 2.0,
+      "sha256": "7630c7cb451afd5b37145cbc34b03e2476c2cdf740c8a36b72fc553083807b45",
+      "uncompressed_sha256": "b5f8c66c857870141ab94d056319548e624d8b67bcb1c73e330b3e8f5ff2e99e"
+    }
+  ],
+  "certification": {
+    "result": "results/rl/final_rl_value_ensemble_700000.json",
+    "seeds": "700000-700099",
+    "wins": 100,
+    "games": 100
+  }
+}
